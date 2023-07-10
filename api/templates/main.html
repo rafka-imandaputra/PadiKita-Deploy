@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Padi Kita | Home</title>
+		<link rel="stylesheet" href={{ url_for('static', filename='/css/main.css') }} />
+		<link
+			href="{{ font_url1 }}"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="{{ font_url2 }}"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src={{ url_for('static', filename='/image/logo.png') }} />
+				<h1>Padi Kita</h1>
+			</div>
+
+			<button id="menu-btn">
+				<i class="material-icons">menu</i>
+			</button>
+
+			<nav>
+				<a href={{ url_for('main') }}>Home</a>
+				<a href={{ url_for('prediksi') }}>Prediksi</a>
+				<a href={{ url_for('ensiklopadi') }}>Ensiklopadi</a>
+				<a href={{ url_for('.main', _anchor='contact') }}>Tim Orbit</a>
+			</nav>
+		</header>
+		<section id="head">
+			<img src={{ url_for('static', filename='/image/main2.png') }} />
+		</section>
+		<section id="predict">
+			<h1>PADI KITA | KLASIFIKASI<br />PENYAKIT PADI</h1>
+			<p>
+				Membantu petani menghasilkan beras yang berkualitas bebas penyakit dengan machine learning. Web ini merupakan implementasi dari temuan analisis tim Orbit dalam ajang TSDN 2022 yang berfungsi untuk klasifikasi penyakit padi (beras) yang dapat mengoptimalisasi produksi padi di Indonesia.
+			</p>
+			<div class="butt">
+				<a href={{ url_for('prediksi') }}><button>TRY IT!</button></a>
+			</div>
+		</section>
+
+		<section id="impact">
+			<h1>
+				Padi Kita <br />
+				untuk Pertanian Indonesia
+			</h1>
+			<p>
+				Kami membuat aplikasi web yang membantu petani untuk menghasilkan beras
+				yang berkualitas bebas penyakit dengan machine learning
+			</p>
+			<div class="item">
+				<img src={{ url_for('static', filename='/image/quality.png') }} />
+				<div>
+					<h2>Memastikan kualitas padi yang baik</h2>
+					<p>
+						Dengan fitur-fitur utamanya, Padi Kita sangat berguna bagi para
+						petani untuk mengoptimalisasi produksi beras dengan kualitas tinggi dan
+						bebas penyakit.
+					</p>
+				</div>
+			</div>
+			<div class="item kebalik">
+				<img src={{ url_for('static', filename='/image/mitigating.png') }} />
+				<div>
+					<h2>Mitigasi penyakit padi</h2>
+					<p>
+						Jika ada padi yang terserang penyakit, Padi Kita memberikan saran
+						untuk menanggulangi hal yang sama terjadi pada padi lainnya.
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src={{ url_for('static', filename='/image/health.png') }}/>
+
+				<div>
+					<h2>Mendukung nutrisi sehat untuk sosial</h2>
+					<p>
+						Dengan padi (beras) yang berkualitas baik, akan berguna untuk
+						menjamin kesehatan bagi penduduk di Indonesia.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="framing">
+			<h1>Latar Belakang</h1>
+			<p>
+				Ada beberapa poin yang menjadi alasan kami membangun aplikasi web Padi
+				Kita.
+			</p>
+			<div class="items">
+				<div>Padi yang terserang penyakit sering menyebabkan gagal panen</div>
+				<div>
+					Gagal panen menjadi salah satu penyebab produksi padi yang kurang optimal
+				</div>
+				<div>Padi membutuhkan pengawasan yang konsisten untuk menjaga kualitasnya</div>
+				<div>Diagnosis penyakit manual cukup memakan waktu</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h1>info tim kami</h1>
+			<p>
+				Kami adalah siswa aktif dari SMKN 4 Bandung jurusan Rekayasa Perangkat Lunak. Kami mengembangkan web Padi
+				Kita untuk menuntaskan capaian Web Apps di ajang TSDN 2022. Ini merupakan output ketiga tim kami, sedangkan 
+				output pertama merupakan <a style="text-decoration: none;" href="https://public.tableau.com/app/profile/raka.iskandar/viz/VisualisasiDataTSDN2022/Storyboard" target="_blank">Dashboard Analytics</a> dan output kedua adalah <a style="text-decoration: none;" href="https://www.kaggle.com/rafkaip/orbit-cv/" target="_blank">Computer Vision Model</a>.
+			</p>
+			<div class="medsos">
+					<table class="medsos" width="1000px" height="100px" align="center">
+						<tr>
+							<td>
+								<img src={{ url_for('static', filename='/image/sasa.png') }} alt="">
+							</td>
+							<td>
+								<img src={{ url_for('static', filename='/image/rafka.png') }} alt="">
+							</td>
+							<td>
+							   <img src={{ url_for('static', filename='/image/raka.png') }} alt="">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Raihana Aisha
+							</td>
+							<td>
+								Rafka Imanda Putra
+							</td>
+							<td>
+								Raka Iskandar
+							</td>
+						</tr>
+						<tr>
+							<td><a href="https://www.instagram.com/b4cterya/">@b4cterya</a></td>
+							<td><a href="https://www.instagram.com/raff_imanda/">@raff_imanda</a></td>
+							<td><a href="https://www.instagram.com/rakaaaisk/">@rakaaaisk</a></td>
+						</tr>
+					</table>
+		</section>
+		<footer>
+			<div class="logo">
+				<img src={{ url_for('static', filename='/image/logo.png') }} width="30px" height="50px"/>
+				<h1>Padi Kita</h1>
+			</div>
+			<h2 class="isi">Padi Kita adalah output ketiga tim Orbit di ajang TSDN 2022. Temuan Dashboard Analytics terkait produksi padi ditindaklanjuti dengan pembuatan machine learning untuk mendeteksi penyakit padi, dan model ini diimplementasikan menjadi website Padi Kita.<br><br>Kedepannya website ini dapat dikembangkan dengan membuat fitur realtime klasifikasi agar user hanya perlu mengarahkan kamera langsung ke padi.</h2>
+			</div>
+			<div>
+				<h2>Tim Orbit SMKN 4 Bandung</h2>
+			</div>
+		</footer>
+		<!-- ##  -->
+		<script src={{ url_for('static', filename='/js/scripts.js') }}></script>
+	</body>
+</html>

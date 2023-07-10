@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padi Kita | Prediksi</title>
+    <script src="{{ url_for('static', filename='/js/scripts.js') }}" type="application/javascript"></script>
+
+    <script src="{{ url_for('static', filename='/js/bootstrap.min.js') }}" type="application/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="{{ url_for('static', filename='/js/script.js') }}" type="application/javascript"></script>
+
+  <link rel="stylesheet" href={{ url_for('static', filename='/css/main.css') }} />
+
+  <link rel="stylesheet" href={{ url_for('static', filename='/css/prediksi.css') }}>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/bootstrap.min.css') }}">
+    <!-- <link rel="stylesheet" href={{ url_for('static', filename='/css/main.css') }}> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body style="background-color: #fdf8e1;">
+  <header id="spacing">
+		<div class="logo">
+			<img src={{ url_for('static', filename='/image/logo.png') }} />
+			<h1>Padi Kita</h1>
+		</div>
+
+		<button id="menu-btn">
+			<a href={{ url_for('main') }} style="font-family: Coolvetica; color: #1e4f2a; font-size: 1.2em; text-decoration: none;">Home</a>
+		</button>
+
+		<nav>
+			<a href={{ url_for('main') }}>Home</a>
+			<a href={{ url_for('prediksi') }}>Prediksi</a>
+			<a href={{ url_for('ensiklopadi') }}>Ensiklopadi</a>
+			<a href={{ url_for('.main', _anchor='contact') }}>Tim Orbit</a>
+		</nav>
+	</header>
+
+  <div class="row d-flex justify-content-center tobet" id="gas">
+    <iframe
+  src="https://padi-kita-tim-orbit-tsdn-2022.streamlit.app//?embed=true"
+  style="width:100%;border:none;"
+    ></iframe>
+  </div>
+
+
+<footer>
+  <div class="logo">
+    <img src={{ url_for('static', filename='/image/logo.png') }} width="30px" height="50px"/>
+    <h1>Padi Kita</h1>
+  </div>
+  <h2 class="isi" style="font-size: 16px;">Padi Kita adalah output ketiga tim Orbit di ajang TSDN 2022. Temuan Dashboard Analytics terkait produksi padi ditindaklanjuti dengan pembuatan machine learning untuk mendeteksi penyakit padi, dan model ini diimplementasikan menjadi website Padi Kita.<br><br>Kedepannya website ini dapat dikembangkan dengan membuat fitur realtime klasifikasi agar user hanya perlu mengarahkan kamera langsung ke padi.</h2>
+			</div>
+			<div>
+				<h2 style="font-size: 16px;">Tim Orbit SMKN 4 Bandung</h2>
+			</div>
+</footer>
+
+
+</body>
+</html>
